@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            background-color: black;
+            color: white;
+            margin: 0;
+        }
+        .image1{
+            border-radius: 50%;
+            outline: 3px solid green;
+            width: 70px;
+            height: 70px;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1rem;
+            margin-bottom: 20px;
+        }
+        .items {
+       display: flex;
+       align-items: center;
+       gap: 30px;
+      }
+      .items a{
+       text-decoration: none;
+       font-size: 25px;
+       font-weight:bolder;
+       letter-spacing: 1px;
+      }
+      .items a:hover{
+        color: red;
+      }
+      .active{
+        color: red !important;
+      }
+      .image2{
+        border-radius: 50%;
+      }
+      .row{
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+  .image2{
+    width: 500px;
+    height: 600px;
+   
+    padding-left: 9px;
+  }
+  .ab{
+    margin-top: 12px;
+    word-spacing: 3px;
+    margin-right: 5px;
+    font-family: Dancing Script, Helvetica, sans-serif;
+    font-size: 25px;
+  }
+  .beauty{
+    text-align: center;
+     background-color: bisque;
+      color: black;
+      padding: 10px;
+  }
+  .pf1 {
+    width: 100%; 
+    height: 90vh;
+    margin-right: 10px; 
+    border-radius: 5px;  
+    background-color: white;
+  }
+  
+  .Border{
+    margin-top: 50px;
+    padding-left: 50px;
+    font-weight: 1200;
+    font-size: 45px;
+  }
+  .row{
+    padding-left: 50px;
+  }
+  .head{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .email{
+    padding-bottom: 15px;
+    
+  }
+   p i{
+   padding-right: 9px;
+  }
+  .col p{
+    padding-bottom: 10px;
+    
+  }
+  input{
+    background-color: rgb(71, 68, 68);
+    width: 362px;
+    height: 20px;
+    padding: 5px;
+  }
+  textarea{
+    background-color: rgb(71, 68, 68);
+    border: none;
+    padding: 5px;
+  }
+   button{
+    border-radius: 5px;
+    border: none;
+    background-color: red;
+    width: 100px;
+    height: 25px;
+  }
+  button:hover{
+    background-color: rgb(9, 152, 9);
+    color: white;
+  }
+  #msg{
+  color: rgb(9, 152, 9);
+
+  }
+  .imgresponsive{
+    display: block;
+    
+    width: 60vh;
+    height: 70vh;
+   margin: auto;
+   
+  }
+  .info{
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+  .info2{
+    display: block;
+   background-color: white;
+   color: black;
+   text-decoration: none;
+   text-align: center;
+   font-weight: 700;
+   font-size: 25px;
+  }
+  .info2:hover{
+    color: green;
+  }
+  footer{
+    display: flex;
+    background-color: #000000 ; 
+    
+}
+   footer a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+   
+}
+.flex-align-right{
+  margin-left: auto;
+}
+    </style>
+</head>
+<body>
+    <header>
+    <nav>
+        
+        <div class="logo">
+        <img class="image1" src="Image/Portfolio.png" alt="Logo">
+        </div>
+        <div class="items">
+        <a class="active" href="">Home</a>
+        <a href="">About</a>
+        <a href="">Portfolio</a>
+        <a href="">Contact</a>
+    </div>  
+  
+    </nav>
+</header>
+<main>
+    <div class="row">
+    <div class="photo">
+        <img class="image2" src="Image/Myself.jpeg" alt="">
+    </div>
+  <div class="details">
+    <h1>About Me </h1>
+   <p class="ab">Hello, my name is Yashasvi Shukla and I am a first-year Chemical Engineering student from Kanpur, Uttar Pradesh. I compleated my 
+    schooling at Mercy Memorial School,Kanpur. Apart from my academic pursuits, I have a keen interest in painting and art, which is 
+    why I joined the Kalakriti Club. It provides me with a platform to showcase my skills. As someone passionate about learning new 
+    things, I enrolled myself in a web development course. It's been just two months but I have gained lot of knowledge and feel confident in 
+    my skills. I am excited to continue growing and learning in this field.
+   </p>
+  </div>
+</div>
+  <h2 class="beauty"> PORTFOLIO </h2>
+  <div class="pf"data-flickity='{ "wrapAround": true }'>
+    <div class="pf1"><h3 class="head">Event Page</h3><img class="imgresponsive" src="Image/CatsShow.jpeg" alt="">
+      <a class="info2" href="EventPage.html">Event Page</a>
+    <p class="info">This website shows the latest cat contest that is going to held in New York City.This event was
+         made to show America how great cats really are. </p></div>
+    <div class="pf1"><h3 class="head" >JEE Form</h3><img class="imgresponsive" src="Image/Jeemains.jpeg" alt="">
+      <a class="info2" href="JeeForm.html">Jee Form</a>
+    <p class="info">This website shows the registration form of JEE Mains 2024 april Session. Fill Personal details, 
+        Present Address, Permanent address, Password and Security Pin.  </p></div>
+    <div class="pf1"><h3 class="head">News Website</h3><img class="imgresponsive" src="Image/Newspaper.jpeg" alt="">
+      <a class="info2" href="NewsWebsite.html"> News Website</a>
+    <p class="info">This website shows daily politics, entertainment, technology. </p></div>
+    <div class="pf1"><h3 class="head">Landing File</h3><img class="imgresponsive" src="Image/mobile.jpeg" alt="">
+      <a class="info2" href="LandingFile.html">Landing File</a>
+    <p class="info">This website focuses on making the best option for increasing the conversion rates 
+      of your marketing campaigns and lowering your cost of acquiring a lead or sale.  </p></div>
+    
+  </div>
+  <h1 class="Border">Contact Me</h1>
+  <div class="row">
+  <div class="col">
+  <p><i class="fa fa-send" style="font-size:15px;color:red;"></i>yashasvishukla8597@gmail.com</p>
+  <p ><i class="fa fa-phone" style="font-size:15px;color:red;"></i>6393626042</p>
+   
+    </div>
+    
+  <div class="col">
+    <form name="submit-to-google-sheet">
+    <p><input type="text" name="Name" id="Name" placeholder="Your Name" required></p>
+    <p><input type="email" name="E-mail" id="E-mail" placeholder="Your E-mail"required></p>
+    <p><textarea name="Message" id="Message" cols="50" rows="5" placeholder="Your message"required></textarea></p>
+    <p ><button>Submit</button></p>
+   </form>
+   <span id="msg"></span>
+  </div>
+</div>
+</main>
+<footer>
+  <a href="#">FAQ</a>
+  <a href="#">Contact Us</a>
+  <a href="#">Terms of use</a>
+  <a href="#">Privacy Policy</a>
+  <a href="#">Refund Policy</a>
+  <a class="copyright flex-align-right" href="#">&copy; 2024|Web Development</a>
+</footer>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxV2AeTVdkLhZneGL3ocd54ZOvHyeqqpdpCOXBOiJ2fiLft9jbm95M7uTWrGnuEgy79/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
